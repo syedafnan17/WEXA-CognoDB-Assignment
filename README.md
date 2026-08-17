@@ -26,7 +26,7 @@ Instead of treating each piece of information as an isolated database row, WEXA 
 
 The WEXA dashboard provides an overview of active construction projects, estimated budgets, total built-up area, expected completion, quick cost estimation, AI construction assistance, and recent projects.
 
-![WEXA Construction Dashboard](docs/dashboard.png)
+![WEXA Construction Dashboard](frontend/docs/dashboard.png)
 
 ---
 
@@ -34,7 +34,7 @@ The WEXA dashboard provides an overview of active construction projects, estimat
 
 The Projects section displays construction projects with their built-up area and current progress.
 
-![WEXA Projects](docs/projects.png)
+![WEXA Projects](frontend/docs/projects.png)
 
 ---
 
@@ -42,7 +42,7 @@ The Projects section displays construction projects with their built-up area and
 
 The Cost Estimator calculates an approximate construction cost based on built-up area and the user's optional budget.
 
-![WEXA Cost Estimator](docs/cost-estimator.png)
+![WEXA Cost Estimator](frontend/docs/cost-estimator.png)
 
 ---
 
@@ -50,7 +50,7 @@ The Cost Estimator calculates an approximate construction cost based on built-up
 
 The Materials section provides categories for bricks, cement, steel, and finishing materials for construction planning.
 
-![WEXA Materials](docs/materials.png)
+![WEXA Materials](frontend/docs/materials.png)
 
 ---
 
@@ -58,7 +58,7 @@ The Materials section provides categories for bricks, cement, steel, and finishi
 
 The AI Construction Advisor provides construction-planning assistance through house planning, cost optimization, material advice, and project analysis.
 
-![WEXA AI Construction Advisor](docs/ai-advisor.png)
+![WEXA AI Construction Advisor](frontend/docs/ai-advisor.png)
 
 ---
 
@@ -66,7 +66,7 @@ The AI Construction Advisor provides construction-planning assistance through ho
 
 WEXA uses a graph-based data model to represent relationships between projects, locations, estimates, construction materials, and suppliers.
 
-![WEXA Graph Database](docs/neo4j-graph.)
+![WEXA Graph Database](frontend/docs/neo4j-graph.png)
 
 # 🎯 Use Case
 
@@ -97,11 +97,11 @@ Graph Data Model
 
 The WEXA platform uses a graph model to represent relationships between construction projects, estimates, locations, materials, and suppliers.
 
-![WEXA Graph Data Model](docs/graph-data-model.png)
+![WEXA Graph Data Model](frontend/docs/graph-data-model.png)
 
 Main Relationships
 
 - Project → HAS_ESTIMATE → Estimate
 - Project → LOCATED_IN → Location
 - Project → USES_MATERIAL → Material
-- Material → SUPPLIED_BY → Supplier                              
+- Material → SUPPLIED_BY → Supplier 

@@ -18,6 +18,18 @@ WEXA models these entities as a graph using CognoDB.
 
 Instead of treating each piece of information as an isolated database row, WEXA represents the relationships between projects, materials, suppliers, locations, and estimates.
 
+Graph Data Model:
+
+![WEXA Graph Data Model](frontend/docs/graph-data-model.png)
+
+The WEXA platform uses a graph model to represent relationships between construction projects, estimates, locations, materials, and suppliers.
+Main Relationships
+
+- Project → HAS_ESTIMATE → Estimate
+- Project → LOCATED_IN → Location
+- Project → USES_MATERIAL → Material
+- Material → SUPPLIED_BY → Supplier 
+
 ### Main application features
 
 ## 📸 Application Screenshots
@@ -93,15 +105,4 @@ Project
                               └── SUPPLIED_BY ──> Supplier
 
 
-Graph Data Model
 
-The WEXA platform uses a graph model to represent relationships between construction projects, estimates, locations, materials, and suppliers.
-
-![WEXA Graph Data Model](frontend/docs/graph-data-model.png)
-
-Main Relationships
-
-- Project → HAS_ESTIMATE → Estimate
-- Project → LOCATED_IN → Location
-- Project → USES_MATERIAL → Material
-- Material → SUPPLIED_BY → Supplier 
